@@ -1,95 +1,90 @@
-Ubuntu Automation
+# Ubuntu Automation
 
-Ferramenta de Automação para Infraestrutura Linux
+Projeto de automação e administração de ambientes Ubuntu/Linux desenvolvido como portfólio técnico.
 
-Projeto desenvolvido para automatizar a implantação, configuração, manutenção e padronização de estações Ubuntu utilizadas em ambiente institucional.
+## Objetivo
 
-A ferramenta centraliza diversas atividades administrativas em uma única interface interativa, reduzindo significativamente o tempo de configuração de novas máquinas e minimizando falhas humanas durante o processo.
+O projeto está evoluindo de um script monolítico para uma arquitetura modular, com foco em:
 
-⸻
+- automação de configuração de estações Ubuntu;
+- instalação e configuração de ferramentas administrativas;
+- manutenção e diagnóstico do sistema;
+- operações de backup;
+- gerenciamento de repositórios;
+- interface interativa para administradores;
+- distribuição simplificada em pacote único.
 
-Principais funcionalidades
+## Arquitetura em evolução
 
-Implantação
+```text
+ubuntu-automation/
+├── install.sh
+├── menu.sh
+├── modules/
+├── resources/
+├── config/
+├── docs/
+├── logs/
+└── README.md
+```
 
-* Configuração completa da estação de trabalho
-* Seleção automática de repositórios internos
-* Atualização completa do sistema
-* Preparação para integração em ambiente corporativo
+Nesta primeira etapa, a estrutura será criada e os módulos serão implementados gradualmente.
 
-Administração
+## Módulos planejados
 
-* Criação de usuários
-* Alteração de senha
-* Alteração do hostname
-* Configuração de domínio (em desenvolvimento)
+- Configuração completa da estação
+- Repositórios
+- Atualização e manutenção
+- SSH
+- Monitoramento
+- Inventário
+- Impressoras
+- USB
+- Áudio
+- Aplicativos
+- Diagnóstico
+- Reparo de pacotes
+- Limpeza do sistema
+- Backup e restauração
 
-Serviços
+## Princípios do projeto
 
-* Instalação e configuração do OpenSSH
-* Instalação do agente Zabbix
-* Instalação do antivírus Kaspersky
-* Instalação do OCS Inventory/Fusion Inventory
-* Instalação do Okular
+- Modularidade
+- Reutilização de código
+- Caminhos relativos
+- Execução local
+- Facilidade de distribuição
+- Evolução incremental
+- Testes antes de publicação de novas versões
 
-Segurança
+## Segurança e portfólio
 
-* Bloqueio e desbloqueio de portas USB
-* Habilitação e desabilitação de áudio
-* Remoção do Kaspersky quando necessário
+Esta versão pública não incluirá credenciais, senhas, chaves, endereços internos, IPs privados específicos ou arquivos proprietários de ambientes institucionais.
 
-Rede
+O repositório representa a arquitetura, os conceitos e as técnicas de automação desenvolvidas no projeto.
 
-* Testes de conectividade
-* Diagnóstico da estação
-* Verificação das configurações de rede
+## Roadmap
 
-Manutenção
+### Fase 1 — Estrutura
+- [x] Definir a nova arquitetura
+- [ ] Criar instalador local
+- [ ] Criar menu modular
+- [ ] Criar estrutura de módulos
 
-* Reparo automático de pacotes
-* Limpeza do sistema
-* Correção de dependências
+### Fase 2 — Migração
+- [ ] Migrar funcionalidades existentes
+- [ ] Padronizar tratamento de erros
+- [ ] Padronizar logs
+- [ ] Criar sistema de dependências
 
-Backup
+### Fase 3 — Evolução
+- [ ] Melhorar interface visual
+- [ ] Adicionar novos módulos
+- [ ] Criar sistema de configuração
+- [ ] Criar atualização controlada
+- [ ] Criar documentação técnica
 
-* Backup completo de usuários
-* Backup para dispositivos USB
-* Seleção automática do dispositivo de destino
-* Organização automática das pastas de backup
+## Status
 
-Impressoras
+🚧 Em desenvolvimento e evolução.
 
-* Instalação de impressoras por endereço IP
-* Configuração automática
-* Impressão de página de teste
-
-⸻
-
-Tecnologias utilizadas
-
-* Bash Script
-* Ubuntu Linux
-* Shell Script
-* OpenSSH
-* Zabbix Agent
-* Kaspersky Endpoint Security
-* OCS Inventory
-* IPP Printing
-
-⸻
-
-Objetivos
-
-* Automatizar tarefas repetitivas.
-* Padronizar a configuração das estações Linux.
-* Reduzir o tempo de implantação de novos computadores.
-* Centralizar ferramentas administrativas em uma única interface.
-* Diminuir erros operacionais durante a configuração dos equipamentos.
-
-⸻
-
-Resultado
-
-O projeto consolidou diversas rotinas de administração de sistemas em uma única ferramenta, permitindo que atividades que antes eram executadas manualmente fossem realizadas de forma padronizada, rápida e segura.
-
-Este projeto representa uma aplicação prática de automação de infraestrutura Linux utilizando Shell Script em ambiente institucional.
