@@ -1,16 +1,6 @@
-# Logs
 logs/*.log
-*.log
-
-# Temporary files
-*.tmp
-*.bak
-*~
-
-# Local configuration
-config/local.sh
-.env
-
-# Archives generated locally
 *.zip
 *.tar.gz
+*.deb
+resources/private/
+.env
